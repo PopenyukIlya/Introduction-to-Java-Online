@@ -1,0 +1,29 @@
+
+
+import java.util.Scanner;
+
+
+
+public class q {
+
+    public static void main(String[] args) {
+        int q=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите кол-во элиментов массива");
+        int z=scanner.nextInt();
+        System.out.println("Введите кратное");
+        int k=scanner.nextInt();
+        System.out.println("Заполните массив");
+        int mas[] = new int[z];//создаем  массив размером 10
+        for (int i = 0; i < mas.length; i++) {
+            mas[i] = scanner.nextInt();// заполняем массив с клавиатуры
+        }
+        for (int i = 0; i < mas.length; i++) {
+            if (mas[i]==k)
+            {
+            q++;}
+        }
+        System.out.println("Кол-во кратных");
+        System.out.println(q);
+    }
+}

@@ -1,0 +1,28 @@
+
+
+import java.util.Scanner;
+
+
+
+public class q {
+
+    public static void main(String[] args) {
+     int min1=0, min2=0 ,max=0;
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();// хз почему нужно вводить через запятую а не точку
+        int b=scanner.nextInt();
+        int c=scanner.nextInt();// хз почему нужно вводить через запятую а не точку
+        int d=scanner.nextInt();
+        //System.out.print(max(min(a,b),min(c,d)));
+        if (a<b){min1=a;}
+        if (a>b){min1=b;}
+        System.out.print(min1);
+        System.out.print(" ");
+        if (c<d){min2=c;}
+        if (c>d){min2=d;}
+        System.out.println(min2);
+        if (min1<min2){max=min2;}
+        if (min1>min2){max=min1;}
+        System.out.print(max);
+    }
+}

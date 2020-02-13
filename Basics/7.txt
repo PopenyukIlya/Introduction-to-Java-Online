@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+import static java.lang.Math.*;
+import static java.lang.StrictMath.sqrt;
+
+public class q {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();// хз почему нужно вводить через запятую а не точку
+        int b=scanner.nextInt();
+        int sum=a+b;
+        if (sum>=180) {System.out.print("Треугольник не существует ");}
+        else if( sum<180 && sum==90 || a==90 || b==90) {System.out.print("Треугольник существует и он прямоугольный");}
+        else if (sum<180){System.out.print("Треугольник существует ");}
+    }
+}

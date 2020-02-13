@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+import static java.lang.Math.*;
+import static java.lang.StrictMath.sqrt;
+
+public class q {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();
+                int b=scanner.nextInt();
+        System.out.println(((sin(a)+cos(b))/(cos(a)-sin(b)))*tan(a*b));    
+    }
+}

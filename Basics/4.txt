@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+import static java.lang.Math.*;
+import static java.lang.StrictMath.sqrt;
+
+public class q {
+    public static void main(String[] args) {
+        int ddd;
+        double ddd_nnn;
+        Scanner scanner=new Scanner(System.in);
+
+        double nnn_ddd=scanner.nextDouble();// хз почему нужно вводить через запятую а не точку
+        int nnn = (int) nnn_ddd;
+        ddd = (int) ((nnn_ddd - nnn) * 1000);
+        ddd_nnn = ddd + nnn/1000.0;
+        System.out.println(ddd_nnn);
+    }
+}

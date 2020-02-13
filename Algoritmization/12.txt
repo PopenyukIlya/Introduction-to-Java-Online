@@ -1,0 +1,30 @@
+
+
+import java.util.Scanner;
+
+
+
+public class q {
+
+    public static void main(String[] args) {
+        int[][] matrixA;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Высота матрицы");
+        int n=scanner.nextInt();
+        System.out.println("Ширина матрицы");
+        int m=scanner.nextInt();
+        matrixA = new int[n][m];
+        for (int i=0;i<n;i++) {
+            for (int j = 0; j < m; j++) {
+                matrixA[i][j] = scanner.nextInt();
+            }
+        }
+        for (int i=0;i<n;i++) {
+            for (int j = 0; j < m; j++) {
+                if (i==j){
+                System.out.print(matrixA[i][j] + "\t");
+            }}
+           // System.out.println();
+        }
+    }
+}

@@ -1,0 +1,52 @@
+
+
+import java.util.Scanner;
+
+
+
+public class q {
+
+    public static void main(String[] args) {
+        int[][] matrixA;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("k stroka");
+        int k=scanner.nextInt();
+        System.out.println("p stolbec");
+        int p=scanner.nextInt();
+        System.out.println("Высота матрицы");
+        int m = scanner.nextInt();
+        System.out.println("Ширина матрицы");
+        int n = scanner.nextInt();
+        matrixA = new int[m][n];
+        System.out.println("Введите значения индексов матрциы");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                matrixA[i][j] = scanner.nextInt();
+            }
+        }
+        System.out.println("Матрица");
+        for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    System.out.print(matrixA[i][j]+"\t");
+                }
+            System.out.println();
+            }
+        System.out.println("Строка");
+        for (int i = 0; i < m; i++) {
+            if (i==(k-1)){
+            for (int j = 0; j < n; j++) {
+                System.out.print(matrixA[i][j]);
+            }
+            }
+        }
+        System.out.println();
+        System.out.println("Столбец");
+        for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (j==(p-1))
+                    System.out.println(matrixA[i][j]);
+                }
+
+        }
+    }
+}

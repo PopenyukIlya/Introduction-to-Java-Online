@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+import static java.lang.Math.pow;
+import static java.lang.StrictMath.sqrt;
+
+public class q {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int a=scanner.nextInt();
+                int b=scanner.nextInt();
+                        int c=scanner.nextInt();
+        System.out.println(((b+sqrt(pow(b,2)+4*a*c)))/(2*a)-pow(a,3)*c+pow(b,-2));
+    }
+}

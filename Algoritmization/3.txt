@@ -1,0 +1,44 @@
+
+
+import java.util.Scanner;
+
+
+
+public class q {
+
+    public static void main(String[] args) {
+        int otr=0;
+        int pol=0;
+        int nol=0;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите кол-во элиментов массива");
+        int n=scanner.nextInt();
+        System.out.println("Заполните массив");
+
+        int mas[] = new int[n];//создаем  массив размером 10
+        for (int i = 0; i < mas.length; i++) {
+            mas[i] = scanner.nextInt();// заполняем массив с клавиатуры
+        }
+
+        for (int i = 0; i < mas.length; i++) {
+            if (mas[i]<0)
+            {otr++;
+                }
+
+            if (mas[i]>0)
+            {pol++;
+            }
+
+            if (mas[i]==0)
+            {nol++;
+            }
+        }
+        System.out.println("Вывод отрицательных");
+        System.out.println(otr);
+        System.out.println("Вывод нулевых");
+        System.out.println(nol);
+        System.out.println("Вывод положительных");
+        System.out.println(pol);
+    }
+}
